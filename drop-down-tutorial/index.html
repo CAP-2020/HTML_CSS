@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>drop-down-menu</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- reset.css destyle -->
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+</head>
+<body>
+  <div class="menuBar">
+    <ul>
+      <li class="active" id="menu-1">
+        <a href="#">ホーム</a>
+        <div class="subMenu-1">
+          <ul>
+            <li><a href="#">サイトについて</a></li>
+            <li><a href="#">社訓</a></li>
+            <li><a href="#">事業内容</a></li>
+            <li><a href="#">スローガン</a></li>
+          </ul>
+        </div>
+      </li>
+      <li id="menu-2">
+        <a href="#">オンライン相談</a>
+        <div class="subMenu-1">
+          <ul>
+            <li><a href="#">サイトについて</a></li>
+            <li><a href="#">社訓</a></li>
+            <li><a href="#">事業内容</a></li>
+            <li><a href="#">スローガン</a></li>
+          </ul>
+        </div>
+      </li>
+      <li id="menu-3">
+        <a href="#">ブログ</a>
+        <div class="subMenu-1">
+          <ul>
+            <li><a href="#">サイトについて</a></li>
+            <li><a href="#">社訓</a></li>
+            <li><a href="#">事業内容</a></li>
+            <li><a href="#">スローガン</a></li>
+          </ul>
+        </div>
+      </li> 
+      <li id="menu-4">
+        <a href="#">お問い合わせ</a>
+        <div class="subMenu-1">
+          <ul>
+            <li><a href="#">サイトについて</a></li>
+            <li><a href="#">社訓</a></li>
+            <li><a href="#">事業内容</a></li>
+            <li><a href="#">スローガン</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <script>
+    /* ボタンを押したらハイライトする */
+
+    const menus = [];
+    for (let i = 1; i <= 4; i++){
+      let menu = document.getElementById(`menu-${i}`);
+      menus.push(menu);
+      console.log(menus);
+    }
+
+    document.addEventListener("click", (e) => {
+      const menuItem = e.target.closest('li'); /* クリックイベントを */
+      console.log(menuItem.id);
+      menus.map((menu) => {
+        if(menuItem.id === menu.id){
+          menu.classList.add("active");
+        }else{
+          menu.classList.remove("active");
+        }
+      })
+    })
+
+
+  </script>
+</body>
+</html>

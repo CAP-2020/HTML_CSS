@@ -1,0 +1,51 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/bg2.jpg);
+  background-size: cover;
+  background-position: center top;
+}
+.menuBar {
+  background-color: #5599c7;
+  text-align: center;
+}
+.menuBar ul li {
+  display: inline-block; /* 横並びでサイズ変更可にする*/
+  width: 120px;
+  margin: 0 35px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.menuBar ul li a {
+  color: white;
+  font-weight: 600;
+}
+.active,
+.menuBar ul li:hover {
+  background-color: #70b0db;
+}
+.subMenu-1 {
+  position: absolute;
+  background-color: #5599c7;
+  margin-top: 25px;  /* marginだと左右にも余白が開きデザインが崩れる */
+  padding: 10px 0;
+  display: none; /* 非表示にしている*/
+}
+/* menuBarをホバーしてる時,subのliの挙動を操作*/
+.menuBar ul li:hover .subMenu-1 ul li {  
+  /* 先の指定でインライン→横並びになってる*/
+  display: block;  /* ブロック要素に変更。縦並びに */
+  width: 140px;
+  border-bottom: 1px dotted white;
+}
+/* subMenu-1がdisplay:none;になっている*/
+/* .menuBarがhoverされてる時にsubMenu-1をdisplay:blockに変更する */
+.menuBar ul li:hover .subMenu-1 {
+  display: block;
+}
+/* subのliタグの最後のタグのdottedをとっている*/
+.menuBar ul li:hover .subMenu-1 ul li:last-child {
+  border: none;
+}

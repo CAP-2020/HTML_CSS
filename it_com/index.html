@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT_com</title>
+  <!-- reset.css destyle -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <a href="./" class="logo">ITcom</a>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section1">
+      <div class="container">
+        <p class="heading">TechSolutions</p>
+        <h1>未来を作る<br>テクノロジーソリューション</h1>
+        <p class="text">Shaping the Future sith 
+          Innovative Technology Solutions</p>
+          <a href="#contact">Contact</a>
+      </div>
+      <div class="filter"></div>
+    </section>
+    <section class="section2" id="servicef">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="images/pc_icom.png" alt="パソコンのアイコン">
+            <h2>カスタムソフト開発</h2>
+            <hr>
+            <p class="text">
+              クラウドテクノロジーを活用し、スケーラブルで柔軟なソリューションを提供します。
+              ビジネスデータの安全な保管とアクセスを確保します。
+            </p>
+          </div>
+          <div class="col">
+            <img src="images/pc_icom2.png" alt="クラウドのアイコン">
+            <h2>クラウドソリューション</h2>
+            <hr>
+            <p class="text">
+              クラウドテクノロジーを活用し、スケーラブルで柔軟なソリューションを提供します。
+              ビジネスデータの安全な保管とアクセスを確保します。
+            </p>
+          </div>
+          <div class="col">
+            <img src="images/pc_icom3.png" alt="データのアイコン">
+            <h2>データ分析</h2>
+            <hr>
+            <p class="text">
+              当社のデータ分析サービスは情報を把握し、トレンドを特定し、
+              ビジネスの成長をソック進するために
+              データの力を活用するお鉄d歳をする為に設計されています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section3 class="section3" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>テクノロジーでビジネスを革新しよう</h2>
+            <hr>
+            <p class="text">
+              ITcomは革新的なテクノロジーソリューションを提供し。クライアントのビジネスを強化します。<br>
+              私たちの専門のチームは、ビジョンを実現し、競争力を高めるためのパートナーとしてお手伝いします。
+            </p>
+          </div>
+          <div class="col">
+            <img src="images/image2.jpg" width="100%" alt="テクノロジーでビジネスを革新しよう">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <h2>テクノロジーの情熱と革新の原動力</h2>
+            <hr>
+            <p class="text">
+              ITcomは単なるテクなロジーの提供者ではありません。<br>
+              私たちは情熱と創造性を持ってテクノロジーを活用し、革新的なソリューションを提供します。<br><br>
+              私たちの専門家たちは、お客様のビジョンを共有し、ビジネスにテクノロジーの力を結集します。
+            </p>
+          </div>
+          <div class="col">
+            <img src="images/image3.jpg" width="100%" alt="テクノロジーの情熱と革新の原動力">
+          </div>
+        </div>
+      </div>
+    </section3>
+    <section class="section4" id="news">
+      <div class="container">
+        <h2>ニュース</h2>
+        <hr>
+        <ul>
+          <li>
+            <p class="date">2024.12.30</p>
+            <p>新製品を発表しました。</p>
+          </li>
+          <li>
+            <p class="date">2024.12.30</p>
+            <p>ウェビナーを開催しました。</p>
+          </li>
+          <li>
+            <p class="date">2024.12.30</p>
+            <p>クラウドソリューションの新機能を追加しました。</p>
+          </li>
+          <li>
+            <p class="date">2024.12.30</p>
+            <p>ホームページをリニューアルしました。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section5" id="contact">
+      <div class="container">
+        <h2>お問い合わせ</h2>
+        <hr>
+        <form action="./submit.php" method="post">
+          <label for="name">名前</label>
+          <input type="text" id="name" name="mane" required>
+        </form>
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">お問い合わせ内容</label>
+        <textarea name="message" id="message" rows="6"></textarea>
+        <input type="submit" value="送信">
+
+      </div>
+    </section>
+
+  </main>
+  <footer> &copy; ダー子</footer>
+</body>
+</html>

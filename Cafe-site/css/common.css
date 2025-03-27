@@ -1,0 +1,149 @@
+/* common */
+html {
+  font-size: 62.5%;
+}
+/* container */
+.container {
+  width: 100%;
+  margin-left :48px;
+  margin-right: 48px;
+}
+h2 {
+  text-align: center;
+  font-size: 2.4rem;
+}
+h3 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.6rem;
+}
+.section {
+  padding-top: 50px;
+  margin-top: 50px;
+}
+
+/* header */
+#infomation {
+  background-color: #449EB4;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+#navigation {
+  display: flex;
+  justify-content: space-between;
+}
+#navigation .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#navigation h1 img {
+  width: 50%;
+}
+#navigation ul {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  list-style: none;
+}
+#navigation ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* hero */
+#hero {
+  background: url(../img/image001.jpg);
+  background-size: cover;
+}
+#hero .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+
+}
+#hero img {
+  width: 50px;
+  transform: translateX(60px);
+}
+#hero h1 {
+  color: #449EB4;
+}
+
+/* menu */
+#menu {
+  border: 1px solid #449EB4;
+}
+#menu .items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#menu .item {
+  width: 600px;
+  height: 500px;
+  background: url(../img/image001.jpg);
+  background-size: cover;
+  margin: 20px;
+  display: flex;
+  justify-content: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+/* subMenu */
+#submenu {
+  border-bottom: 1px solid #449EB4;
+}
+#submenu .items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+#submenu .item {
+  width: 23%;
+}
+#submenu .item img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* items */
+#items {
+  border-bottom: 1px solid #449EB4;
+}
+#items .items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+#items .item {
+  width: 33%;
+}
+#items .item img {
+  width: 100%; 
+  margin-bottom: 20px;
+}
+
+/* footer */
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+footer .items {
+  display: flex;
+  justify-content: space-around;
+}
+footer ul li {
+  font-size: 1.8rem;
+}
