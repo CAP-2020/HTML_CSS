@@ -1,0 +1,64 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main .items{
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* 主軸の調整 */
+  flex-direction: row;           /* 要素の並びの調整 */
+  align-items: center;           /* 交差軸の調整 */
+  flex-wrap: wrap;               /* 折り返し調整 */
+  gap: 30px;                     /* 余白の調整 */
+  background-color: aquamarine;
+  height: 500px;
+  padding: 100px;
+  padding-bottom: 100px;
+}
+
+main .item{
+  width: 300px;
+  height: auto;
+}
+main .item img{
+  width: 100%;
+}
+
+aside .items{
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* 主軸の調整 */
+  flex-direction: row;           /* 要素の並びの調整 */
+  align-items: center;           /* 交差軸の調整 */
+  flex-wrap: wrap;               /* 折り返し調整 */
+  gap: 30px;                     /* 余白の調整 */
+  background-color: aquamarine;
+  height: 500px;
+  padding: 100px;
+  padding-bottom: 100px;
+}
+aside .items:nth-child(2n-1){
+  flex-direction: row-reverse;
+  background-color: rgb(222, 205, 239);
+}
+
+aside .item{
+  width: 600px;
+  height: auto;
+}
+aside .item img{
+  width: 100%;
+}
+
+
+.item01{
+background-color: red;
+}
+.item02{
+  background-color: blue;
+}
+.item03{
+  background-color: green;
+}

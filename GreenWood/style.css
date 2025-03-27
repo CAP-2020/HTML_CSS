@@ -1,0 +1,67 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: white;
+  text-align: center;
+  padding: 30px;
+}
+#hero img{
+  width: 100%;]
+  background-attachment: ;
+}
+#about{
+  background-color: whtie;
+  text-align: center;
+  padding: 100px;
+}
+#about h2{
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+#todays{
+  background-color: #ECFAEA;
+  text-align: center;
+  padding: 100px;
+}
+#todays h2{
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+#todays img{
+  width: 750px;
+}
+aside{
+  background-color: #fff;
+  text-align: center;
+  padding: 100px;
+}
+aside h2{
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+aside p{
+  margin-bottom: 30px;
+}
+aside div{
+  background-color: rgb(228, 228, 92);
+  padding: 50px 20px 90px 20px;
+}
+aside h3{
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+aside img{
+  width: 718px;
+  height: 600px;
+}
+footer{
+  background-color: #21b844;
+  text-align: center;
+  color: white;
+  height: 40px;
+  font-size: 20px;
+}
